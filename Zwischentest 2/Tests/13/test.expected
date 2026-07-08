@@ -1,0 +1,40 @@
+
+Enter n, r, p, g or x: 
+Enter game type (c,r): 
+Enter winner ID (1-5): 
+Enter loser ID (1-5): 
+Winner and loser identical!
+Enter n, r, p, g or x: 
+Ranked or casual? (r,c): 
+There are no games yet.
+Enter n, r, p, g or x: 
+Enter game type (c,r): 
+Enter winner ID (1-5): 
+Enter loser ID (1-5): 
+New game added
+Enter n, r, p, g or x: 
+Select player (1-5): 
+Player 1 - Rank 50
+Wins/Losses/Winrate: 0/1/0.00 %
+Enter n, r, p, g or x: 
+Enter game type (c,r): 
+Enter winner ID (1-5): 
+Enter loser ID (1-5): 
+New game added
+Enter n, r, p, g or x: 
+Enter game type (c,r): 
+Enter winner ID (1-5): 
+Enter loser ID (1-5): 
+New game added
+Enter n, r, p, g or x: 
+Player ranks
+Player 1 - Rank 150 - TOP
+Player 2 - Rank 100
+Player 3 - Rank 50
+Player 4 - Rank 100
+Player 5 - Rank 100
+Enter n, r, p, g or x: 
+Select player (1-5): 
+Player 1 - Rank 150
+Wins/Losses/Winrate: 2/1/66.67 %
+Enter n, r, p, g or x: 
