@@ -12,6 +12,8 @@ if [ $? -ne 0 ]; then
     exit 1
 fi
 
+FAILED=0
+
 for dir in Tests/*/; do
     if [ ! -f "${dir}test.label" ]; then
         echo "No label file found for test ${dir}"
@@ -39,6 +41,7 @@ for dir in Tests/*/; do
         else
             echo "FAIL: test ${dir} ($label) - memory errors detected"
             cat "${dir}test.vg"
+            FAILED=1
         fi
     else
         ./main < "${dir}test.input" > "${dir}test.got"
@@ -47,6 +50,9 @@ for dir in Tests/*/; do
         else
             echo "FAIL: test ${dir} ($label) - output differs"
             diff "${dir}test.got" "${dir}test.expected"
+            FAILED=1
         fi
     fi
 done
+
+exit $FAILED
