@@ -29,8 +29,9 @@ for dir in Tests/*/; do
     fi
 
     label=$(cat "${dir}test.label")
+    expected=$(cat "${dir}test.expected")
 
-    if [[ "$label" == *"(Memory Check)" ]]; then
+    if [[ "$expected" == "** MemCheck Success **" ]]; then
         valgrind --leak-check=full --error-exitcode=1 \
             ./main < "${dir}test.input" > "${dir}test.got" 2> "${dir}test.vg"
         if [ $? -eq 0 ]; then
@@ -41,12 +42,11 @@ for dir in Tests/*/; do
         fi
     else
         ./main < "${dir}test.input" > "${dir}test.got"
-    fi
-
-    if diff -q "${dir}test.got" "${dir}test.expected" > /dev/null; then
-        echo "PASS: test ${dir} ($label)"
-    else
-        echo "FAIL: test ${dir} ($label) - output differs"
-        diff "${dir}test.got" "${dir}test.expected"
+        if diff -q "${dir}test.got" "${dir}test.expected" > /dev/null; then
+            echo "PASS: test ${dir} ($label)"
+        else
+            echo "FAIL: test ${dir} ($label) - output differs"
+            diff "${dir}test.got" "${dir}test.expected"
+        fi
     fi
 done
