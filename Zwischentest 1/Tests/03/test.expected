@@ -1,0 +1,21 @@
+Enter n, t OR x:
+Enter length,width:
+Area: 90
+New greatest length: 10
+New greatest width: 9
+Enter n, t OR x:
+Enter length,width:
+Area: 56
+New second greatest length: 8
+New second greatest width: 7
+Enter n, t OR x:
+Enter length,width:
+Area: 30
+New third greatest length: 6
+New third greatest width: 5
+Enter n, t OR x:
+Biggest areas
+Area: 90
+Area: 56
+Area: 30
+Average area: 58.67

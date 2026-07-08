@@ -1,0 +1,56 @@
+Enter n, t OR x:
+Enter length,width:
+Area: 32
+New greatest length: 8
+New greatest width: 4
+Enter n, t OR x:
+Enter length,width:
+Area: 8
+New second greatest length: 4
+New second greatest width: 2
+Enter n, t OR x:
+Enter length,width:
+Area: 2
+New third greatest length: 2
+New third greatest width: 1
+Enter n, t OR x:
+Enter length,width:
+Area: 1
+Enter n, t OR x:
+Biggest areas
+Area: 32
+Area: 8
+Area: 2
+Average area: 14.00
+Enter n, t OR x:
+Enter length,width:
+Area: 8
+New third greatest length: 4
+New third greatest width: 2
+Enter n, t OR x:
+Enter length,width:
+Area: 32
+New second greatest length: 8
+New second greatest width: 4
+Enter n, t OR x:
+Enter length,width:
+Area: 128
+New greatest length: 16
+New greatest width: 8
+Enter n, t OR x:
+Enter length,width:
+Area: 512
+New greatest length: 32
+New greatest width: 16
+Enter n, t OR x:
+Biggest areas
+Area: 512
+Area: 128
+Area: 32
+Average area: 224.00
+Enter n, t OR x:
+Biggest areas
+Area: 512
+Area: 128
+Area: 32
+Average area: 224.00
